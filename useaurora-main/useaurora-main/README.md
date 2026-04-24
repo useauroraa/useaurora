@@ -1,2 +1,0 @@
-# useaurora
-Site para Gabi
