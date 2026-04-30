@@ -403,35 +403,31 @@ font-weight:bold;
 
 /* RESPONSIVO */
 @media(max-width:768px){
-.container{
-grid-template-columns:repeat(2,1fr);
-}
-
-@media(max-width:768px){
 
   .categorias{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    justify-items:center;
+    grid-template-columns:repeat(3,auto);
+    justify-content:center;
     gap:10px;
   }
 
   .cat-btn{
-    width:100%;
-    max-width:120px;
-    text-align:center;
+    padding:8px 12px;
+    width:auto;
   }
 
-  /* Faz o último botão (Infantil) ficar centralizado na segunda linha */
+  /* força centralização da segunda linha */
   .cat-btn:nth-child(4){
     grid-column:1 / 2;
+    justify-self:end;
   }
 
   .cat-btn:nth-child(5){
     grid-column:2 / 3;
+    justify-self:start;
   }
 
-}  
+}
 }
 
 /* SEM PRODUTOS */
